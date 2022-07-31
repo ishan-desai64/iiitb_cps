@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module parking_system(
+module iiitb_cps(
 input clk,reset_n,
 input sensor_entrance, sensor_exit,
 input [3:0] password,
