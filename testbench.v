@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module tb_parking_system;
+module iiitb_cps_tb;
 
   
   reg clk;
@@ -74,5 +74,10 @@ module tb_parking_system;
  sensor_exit =1'b1;
 
  end
+  initial 
+    begin 
+      $dumpfile("dump.vcd");
+      $dumpvars(0,iiitb_cps_tb);
+    end
 
 endmodule
