@@ -13,7 +13,7 @@ module iiitb_cps_tb;
   wire [2:0] indicator;
   wire [3:0] countcar;
 
-  parking_system uut (
+  iiitb_cps uut (
   .clk(clk),
   .reset_n(reset_n),
   .sensor_entrance(sensor_entrance),
