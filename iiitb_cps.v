@@ -1,7 +1,7 @@
 // fpga4student.com FPGA projects, Verilog projects, VHDL projects
 // Verilog project: Verilog code for car parking system
 `timescale 1ns / 1ps
-module parking_system( 
+module iiitb_cps( 
                 input clk,reset_n,
  input sensor_entrance, sensor_exit, 
  input [1:0] password_1, password_2,
