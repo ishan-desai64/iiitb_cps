@@ -63,7 +63,7 @@ $   yosys -s yosys_run.sh
 ```
 ## Contributors 
 
-- **Ishan Desai* 
+- **Ishan Desai** 
 - **Kunal Ghosh**  
 
 
