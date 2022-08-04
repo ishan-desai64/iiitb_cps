@@ -19,6 +19,7 @@ is wrong and it will request password another
 time.
 5) STOP: If there is another car inside then is state 
 will generate.
+
 ![Car Parking System](https://user-images.githubusercontent.com/70513539/182803214-cc2d78b4-3ab4-4587-bfd6-a50657b7da2b.jpg)
 ## About iverilog 
 Icarus Verilog is an implementation of the Verilog hardware description language.
@@ -39,11 +40,12 @@ $   sudo apt get install iverilog gtkwave
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
 ```
 $   sudo apt install -y git
-$   git clone 
+$   git clone https://github.com/ishan-desai64/iiitb_cps
 $   cd iiitb_cps
-$   iverilog
+$   iverilog iiitb_cps iiitb_cps.v iiitb-cps_tb.v
 $   ./a.out
 $   gtkwave dump.vcd
+```
 
 ### Simulation Result
 ![iiitb_cps_output_waveform](https://user-images.githubusercontent.com/70513539/182803650-8e0282fe-a5d1-4b52-994b-d64dc0fdf06d.PNG)
@@ -62,8 +64,7 @@ $   yosys -s yosys_run.sh
 ## Contributors 
 
 - **Ishan Desai* 
-- **Kunal Ghosh** 
-- 
+- **Kunal Ghosh**  
 
 
 
