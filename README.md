@@ -111,7 +111,7 @@ Post - synthesis simulation waveform:
 - **Kunal Ghosh** 
 - **Rakshit Bhatia**
 - **Ishan Desai**
-- 
+
 
 
 ## Acknowledgments
