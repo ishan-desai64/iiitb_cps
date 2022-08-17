@@ -1,5 +1,5 @@
 # iiitb_cps
-This Project is on car parking system.
+Implementaion of ASIC Design Flow on Car Parking System.
 # Introduction
 At this moment due to increases in vehicle’s traffic,
 parking is one of the biggest issue people are facing 
