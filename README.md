@@ -47,7 +47,7 @@ $   ./a.out
 $   gtkwave dump.vcd
 ```
 
-## synthesis of Verilog Code
+## Synthesis of Verilog Code
 #### About Yosys
 Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains
 ```
