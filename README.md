@@ -219,7 +219,8 @@ magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read
 ```
 #Result
 
-![Screenshot from 2022-08-30 20-57-59](https://user-images.githubusercontent.com/70513539/187479851-f3c8a4c0-3f86-4acb-8143-543c97b26848.png)
+![Screenshot from 2022-08-30 21-06-12](https://user-images.githubusercontent.com/70513539/187486007-d65aac54-20b0-487e-9689-108d4152bb93.png)
+
 
 ### 3) Placement
 Placement is the process of finding a suitable physical location for each cell in the block.
