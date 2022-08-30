@@ -260,7 +260,7 @@ Clock Tree Synthesis is a technique for distributing the clock equally among all
 Type following command to get Placement result
 
 ```
-run_placement
+run_cts
 ```
 To see results of floorplan got to 
 ```
