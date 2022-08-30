@@ -101,6 +101,9 @@ Post - synthesis simulation waveform:
 
 ![Screenshot from 2022-08-17 21-47-03](https://user-images.githubusercontent.com/70513539/185190966-255f8aff-070d-49b3-9d6c-be069313b56b.png)
 
+#Layout
+![image](Screenshot from 2022-08-30 15-37-42.png)
+
 
 
 # FUTURE WORKS
