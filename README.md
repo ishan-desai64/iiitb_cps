@@ -1,5 +1,6 @@
 # iiitb_cps
-Implementaion of ASIC Design Flow on Car Parking System.
+This Project is done as a part of course project in subject known as "Physical Design of ASIC".In this project we will complete RTL design to GDS with the help of OpenLane using SKYwater PDKs
+
 # Introduction
 At this moment due to increases in vehicle’s traffic,
 parking is one of the biggest issue people are facing 
