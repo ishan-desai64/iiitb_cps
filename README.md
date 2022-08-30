@@ -184,11 +184,66 @@ prep -design iiitb_cps
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 ```
+# 1) Synthesis
+To get synthesis types following command
+```
+run_synthesis
+```
+To get report do following steps
+1) Go to iiitb_cps in OpenLane
+2) Go to 'runs' folder which is created after running above command 
+3) Go to logs folder and open synthesis folder
+4) open 32-synthesis log
 
+You will see following results
 
+![Screenshot from 2022-08-30 20-57-59](https://user-images.githubusercontent.com/70513539/187478005-787bc114-9446-4ee2-99bc-a87dacfc8f83.png)
 
+# 2) Floorplan
 
+In the VLSI physical design, floorplanning is an essential design step, as it determines the size, shape, and locations of modules in a chip and as such it estimates the total chip area, the interconnects, and, delay. Computationally, VLSI floorplanning is an NP hard problem.
 
+Type following command to get floorplan result
+
+```
+run_floorplan
+```
+To see results of floorplan got to 
+```
+OpenLane-->iiitb_cps-->runs-->results-->floorplan
+```
+Type following command to get results
+```
+magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_cps.def &
+```
+#Result
+
+![Screenshot from 2022-08-30 20-57-59](https://user-images.githubusercontent.com/70513539/187479851-f3c8a4c0-3f86-4acb-8143-543c97b26848.png)
+
+# 3) Placement
+Placement is the process of finding a suitable physical location for each cell in the block.
+Timing
+power area
+optimization
+Routable design
+Minimum cell density 
+pin density(Reduce the congestion  due to cells and pins) 
+Minimum timing DRC’s
+
+Type following command to get Placement result
+
+```
+run_placement
+```
+To see results of floorplan got to 
+```
+OpenLane-->iiitb_cps-->runs-->results-->placement
+```
+Type following command to get results
+```
+magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_cps.def &
+```
+#Result
 
 ![Screenshot from 2022-08-30 15-37-42](https://user-images.githubusercontent.com/70513539/187410827-9b4a5cbe-a951-4167-88ce-15ac559dcaf6.png)
 
