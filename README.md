@@ -88,7 +88,7 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 
 # SIMULATION
 
-Pre - synthesis simulation waveform:
+Pre - synthesis simulation waveform: 
 
 ![Screenshot from 2022-08-17 21-06-10](https://user-images.githubusercontent.com/70513539/185191281-f9b2f2ba-3362-43fd-b6aa-a299bad6f539.png)
 
@@ -102,7 +102,43 @@ Post - synthesis simulation waveform:
 
 ![Screenshot from 2022-08-17 21-47-03](https://user-images.githubusercontent.com/70513539/185190966-255f8aff-070d-49b3-9d6c-be069313b56b.png)
 
-# Layout
+# Physical Design using SKYwater 130 PDK:
+In this module we will see various ASIC Design flows such as
+1) RTL Design
+2) Synthesis
+3) FloorPlan
+4) Placement
+5) Clock Tree Synthesis(CTS)
+6) Routing
+7) SignOff
+8) Tapeout
+
+We have already completed first two parts of ASIC Design flow RTL design and Synthesis,from now we will complete remaining steps with the help of 
+OpenLane and Magic softwares.
+
+# OpenLane
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII. To know more go to https://github.com/The-OpenROAD-Project/OpenLane
+
+# OpenLane Installation
+To download OpenLane Software follow this below given steps:
+1) Download Docker from here https://docs.docker.com/engine/install/ubuntu/
+2) Download python3 if it is not already downloaded using following command
+''''
+$   apt install -y build-essential python3 python3-venv python3-pip
+''''
+3) Go to Home directory and write this commands there
+'''
+$   git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+$   cd OpenLane/
+$   sudo make
+'''
+4) To test 
+'''
+$ sudo make test
+'''
+
+
+
 
 
 ![Screenshot from 2022-08-30 15-37-42](https://user-images.githubusercontent.com/70513539/187410827-9b4a5cbe-a951-4167-88ce-15ac559dcaf6.png)
