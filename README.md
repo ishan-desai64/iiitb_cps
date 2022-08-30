@@ -123,19 +123,19 @@ OpenLane is an automated RTL to GDSII flow based on several components including
 To download OpenLane Software follow this below given steps:
 1) Download Docker from here https://docs.docker.com/engine/install/ubuntu/
 2) Download python3 if it is not already downloaded using following command
-''''
+```
 $   apt install -y build-essential python3 python3-venv python3-pip
-''''
+```
 3) Go to Home directory and write this commands there
-'''
+```
 $   git clone https://github.com/The-OpenROAD-Project/OpenLane.git
 $   cd OpenLane/
 $   sudo make
-'''
+```
 4) To test 
 '''
 $ sudo make test
-'''
+```
 
 
 
