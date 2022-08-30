@@ -103,6 +103,7 @@ Post - synthesis simulation waveform:
 ![Screenshot from 2022-08-17 21-47-03](https://user-images.githubusercontent.com/70513539/185190966-255f8aff-070d-49b3-9d6c-be069313b56b.png)
 
 # Physical Design using SKYwater 130 PDK:
+
 In this module we will see various ASIC Design flows such as
 1) RTL Design
 2) Synthesis
@@ -133,9 +134,57 @@ $   cd OpenLane/
 $   sudo make
 ```
 4) To test 
-'''
+```
 $ sudo make test
 ```
+# Magic
+
+Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow. More about magic at http://opencircuitdesign.com/magic/index.html
+
+# Installation Steps
+1) Type this following command in home directory to downlaod
+```
+$   sudo apt-get install m4
+$   sudo apt-get install tcsh
+$   sudo apt-get install csh
+$   sudo apt-get install libx11-dev
+$   sudo apt-get install tcl-dev tk-dev
+$   sudo apt-get install libcairo2-dev
+$   sudo apt-get install mesa-common-dev libglu1-mesa-dev
+$   sudo apt-get install libncurses-dev
+
+```
+2) Type following command to download in home directory
+
+```
+$   git clone https://github.com/RTimothyEdwards/magic
+$   cd magic/
+$   ./configure
+$   sudo make
+$   sudo make install
+
+```
+# i) Preperation
+To get Layout first use followig steps
+```
+1) Create folder iiitb_cps in OpenLane
+2) Create src folder in iiitb_cps
+3) copy file iiitb_cps.v in src
+4) create config.jason file in iiitb_cps folder
+
+```
+To open magic layout type following command in OpenLane directory
+```
+sudo make mount
+./flow.tcl -interactive
+```
+This above written command will create a space where type following command
+```
+prep -design iiitb_cps 
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
+
 
 
 
