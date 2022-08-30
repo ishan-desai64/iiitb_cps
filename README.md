@@ -87,19 +87,18 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 
 
 
-## SIMULATION
+## Pre-Synthesis Simulation
 
-Pre - synthesis simulation waveform: 
 
 ![Screenshot from 2022-08-17 21-06-10](https://user-images.githubusercontent.com/70513539/185191281-f9b2f2ba-3362-43fd-b6aa-a299bad6f539.png)
 
 
-Post - synthesis simulation waveform:
+## Post-Synthesis Simulation
 
 ![Screenshot from 2022-08-17 21-41-56](https://user-images.githubusercontent.com/70513539/185191072-5dc9a4e1-bbde-4eef-bd92-a312a96e69a5.png)
 
 
-#Stats
+## Stats
 
 ![Screenshot from 2022-08-17 21-47-03](https://user-images.githubusercontent.com/70513539/185190966-255f8aff-070d-49b3-9d6c-be069313b56b.png)
 
