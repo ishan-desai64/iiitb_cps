@@ -216,7 +216,7 @@ Type following command to get results
 ```
 magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_cps.def &
 ```
-#Result
+##### Result
 
 ![Screenshot from 2022-08-30 21-06-12](https://user-images.githubusercontent.com/70513539/187486007-d65aac54-20b0-487e-9689-108d4152bb93.png)
 
@@ -244,7 +244,7 @@ Type following command to get results
 ```
 magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_cps.def &
 ```
-#Result
+##### Result
 
 ![Screenshot from 2022-08-30 15-37-42](https://user-images.githubusercontent.com/70513539/187410827-9b4a5cbe-a951-4167-88ce-15ac559dcaf6.png)
 
@@ -265,11 +265,11 @@ To see results of floorplan got to
 ```
 OpenLane-->iiitb_cps-->runs-->results-->cts
 ```
-#Result
+###### Result
 
 ![Screenshot from 2022-08-30 21-17-43](https://user-images.githubusercontent.com/70513539/187482534-903e6184-61c4-4bb7-a10e-233d55312821.png)
 
-#### Power report
+##### Power report
 
 ![Screenshot from 2022-08-30 21-20-41](https://user-images.githubusercontent.com/70513539/187483032-771ae517-3e51-4b43-9d81-ee3d89a4e359.png)
 
@@ -289,7 +289,7 @@ Type following command to get results
 ```
 magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_cps.def &
 ```
-#Result
+##### Result
 
 ![Screenshot from 2022-08-30 21-22-30](https://user-images.githubusercontent.com/70513539/187483507-78be14bb-2c11-48dd-bb69-9d0bae2f0d74.png)
 
