@@ -251,15 +251,51 @@ magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read
 ![Screenshot from 2022-08-30 15-50-04](https://user-images.githubusercontent.com/70513539/187412879-87677109-3d89-4eb5-92fc-d500b91de42a.png)
 
 
+# 4) Clock Tree Synthesis
 
-# Synthesis Report
+Clock Tree Synthesis is a technique for distributing the clock equally among all sequential parts of a VLSI design. The purpose of Clock Tree Synthesis is to reduce skew and delay. Clock Tree Synthesis is provided the placement data as well as the clock tree limitations as input.
 
-![Screenshot from 2022-08-30 15-43-43](https://user-images.githubusercontent.com/70513539/187411506-5c7d0aea-bde0-4fca-bebc-a5aecb8f46ea.png)
+Type following command to get Placement result
+
+```
+run_placement
+```
+To see results of floorplan got to 
+```
+OpenLane-->iiitb_cps-->runs-->results-->cts
+```
+#Result
+
+![Screenshot from 2022-08-30 21-17-43](https://user-images.githubusercontent.com/70513539/187482534-903e6184-61c4-4bb7-a10e-233d55312821.png)
+
+## Power report
+
+![Screenshot from 2022-08-30 21-20-41](https://user-images.githubusercontent.com/70513539/187483032-771ae517-3e51-4b43-9d81-ee3d89a4e359.png)
+
+# 5) Routing
+
+Making physical connections between signal pins using metal layers are called Routing. Routing is the stage after CTS and optimization where exact paths for the interconnection of standard cells and macros and I/O pins are determined.
+
+Type following command to get Routing result
+```
+run_routing
+```
+To see results of floorplan got to 
+```
+OpenLane-->iiitb_cps-->runs-->results-->routing
+```
+Type following command to get results
+```
+magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_cps.def &
+```
+#Result
+
+![Screenshot from 2022-08-30 21-22-30](https://user-images.githubusercontent.com/70513539/187483507-78be14bb-2c11-48dd-bb69-9d0bae2f0d74.png)
 
 
 # FUTURE WORKS
-* Installation of openlane.
-* Floor planning.
+* Signoff
+* Tapeout
 
 
 ## Contributors 
