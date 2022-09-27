@@ -293,6 +293,10 @@ magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read
 
 ![Screenshot from 2022-08-30 21-22-30](https://user-images.githubusercontent.com/70513539/187483507-78be14bb-2c11-48dd-bb69-9d0bae2f0d74.png)
 
+#### Area
+
+![Screenshot from 2022-09-27 11-48-31](https://user-images.githubusercontent.com/70513539/192448550-201bad8a-6ab5-4c0d-b096-4dfb8209b9d0.png)
+
 
 ## FUTURE WORKS
 * Signoff
