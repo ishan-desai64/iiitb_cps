@@ -311,6 +311,32 @@ magic -T /home/ishan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read
 
 ![Screenshot from 2022-09-27 11-48-31](https://user-images.githubusercontent.com/70513539/192448550-201bad8a-6ab5-4c0d-b096-4dfb8209b9d0.png)
 
+### Performance
+```
+$ sta <br>
+
+OpenSTA> read_liberty -max /home/nandu/OpenLane/designs/iiitb_freqdiv/src/sky130_fd_sc_hd__fast.lib <br>
+
+OpenSTA> read_liberty -min /home/nandu/OpenLane/designs/iiitb_freqdiv/src/sky130_fd_sc_hd__slow.lib <br>
+
+OpenSTA> read_verilog /home/nandu/OpenLane/designs/iiitb_freqdiv/runs/RUN_2022.09.27_14.17.25/results/routing/iiitb_freqdiv.resized.v <br>
+
+OpenSTA> link_design iiitb_freqdiv <br>
+
+OpenSTA> read_sdc /home/nandu/OpenLane/designs/iiitb_freqdiv/runs/RUN_2022.09.27_14.17.25/results/cts/iiitb_freqdiv.sdc <br>
+
+OpenSTA> read_spef /home/nandu/OpenLane/designs/iiitb_freqdiv/runs/RUN_2022.09.27_14.17.25/results/routing/iiitb_freqdiv.nom.spef <br>
+
+OpenSTA> set_propagated_clock [all_clocks] <br>
+
+OpenSTA> report_checks <br>
+```
+
+![Screenshot from 2022-09-27 23-20-03](https://user-images.githubusercontent.com/70513539/192603070-84bd0ffa-3501-41f0-89e2-d80a0a6227ce.png)
+
+
+
+
 
 ## FUTURE WORKS
 * Signoff
