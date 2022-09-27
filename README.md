@@ -273,6 +273,20 @@ OpenLane-->iiitb_cps-->runs-->results-->cts
 
 ![Screenshot from 2022-08-30 21-20-41](https://user-images.githubusercontent.com/70513539/187483032-771ae517-3e51-4b43-9d81-ee3d89a4e359.png)
 
+#### Gate Count
+
+To get gate count go to 
+```
+OpenLane--> iiitb_cps-->runs-->results-->cts
+```
+
+![Screenshot from 2022-09-27 11-35-07](https://user-images.githubusercontent.com/70513539/192450398-52543c61-51bd-4790-8bb7-07a8be7ed732.png)
+
+
+
+
+
+
 ### 5) Routing
 
 Making physical connections between signal pins using metal layers are called Routing. Routing is the stage after CTS and optimization where exact paths for the interconnection of standard cells and macros and I/O pins are determined.
