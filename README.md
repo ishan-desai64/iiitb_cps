@@ -332,7 +332,8 @@ OpenSTA> set_propagated_clock [all_clocks] <br>
 OpenSTA> report_checks <br>
 ```
 
-![Screenshot from 2022-09-27 23-20-03](https://user-images.githubusercontent.com/70513539/192603070-84bd0ffa-3501-41f0-89e2-d80a0a6227ce.png)
+
+![Performance](https://user-images.githubusercontent.com/70513539/192699525-834baef6-6d3c-4ec0-b44b-f8504185bca4.png)
 
 
 
